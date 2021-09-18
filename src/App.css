@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+body {
+  background-color: rgba(96, 44, 145, 0.363);
+}
+.allBooks {
+  width: 80%;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+.allBooks img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.allBooks h1 {
+  font-size: 26px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2,
+h3,
+h4 {
+  font-size: 18px;
+  color: black;
+  font-weight: 100;
+}
+header {
+  background-color: rgb(170, 62, 180);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+header ul {
+  display: flex;
+}
+header h1 {
+  color: white;
+}
+header ul li {
+  margin: 0 20px;
+}
+header ul li a {
+  font-size: 30px;
+  color: white;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.details p {
+  width: 60% !important;
+  text-align: center;
+  font-size: 23px;
+  max-width: 60%;
+}
+.details img{
+  width: 25%;
+}
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th {
+  border: 1px solid black;
+  font-size: 30px;
+  padding: 10px;
+  font-weight: 100;
+}
+td {
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 5px;
+  font-weight: 100;
+}
+th button {
+  background-color: rgb(170, 62, 180);
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid rgb(170, 62, 180);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+td button {
+  background-color: rgb(238, 7, 7);
+  color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 2px solid rgb(70, 9, 9);
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(104, 4, 91);
+  justify-content: center;
+  align-items: center;
+  display: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: 0.5s;
+}
+input {
+  margin: 10px;
+  width: 400px;
+}
+textarea{
+  width: 400px;
+  max-width: 400px;
+  min-height: 100px;
+  max-height: 500px;
+  min-width: 400px;
+}
+.modal button{
+  padding: 10px;
+  cursor: pointer;
+}
+
